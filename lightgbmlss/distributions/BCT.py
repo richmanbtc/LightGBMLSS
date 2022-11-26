@@ -6,7 +6,7 @@ import math
 from scipy.special import gammaln, digamma, polygamma
 from lightgbmlss.utils import *
 
-np.seterr(all="ignore") 
+np.seterr(all="ignore")
 
 ########################################################################################################################
 #################################################     BCT    ##########################################################
@@ -333,7 +333,7 @@ class BCT():
 
 
         # Weights
-        if data.get_weight() == None:
+        if data.get_weight() is None:
             # Use 1 as weight if no weights are specified
             weights = np.ones_like(target, dtype=float)
         else:

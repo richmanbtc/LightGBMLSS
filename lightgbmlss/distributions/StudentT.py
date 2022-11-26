@@ -200,7 +200,7 @@ class StudentT():
 
 
         # Weights
-        if data.get_weight() == None:
+        if data.get_weight() is None:
             # Use 1 as weight if no weights are specified
             weights = np.ones_like(target, dtype=float)
         else:
